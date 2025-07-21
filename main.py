@@ -1,15 +1,11 @@
-import calculator
-import lambda_calculator
-def main1():
-    print(calculator.add(5, 3))
-    print(calculator.subtract(10, 4))
-    print(calculator.multiply(6, 7))
-    print(calculator.divide(8, 2))
+import string_operations as so
+def main():
+    sample_string = "hello World"
+    print("Original String:", sample_string)
+    print("Reversed String:", so.reverse_string(sample_string))
+    print("Capitalized String:", so.capitalize_string(sample_string))
+    print("Lowercase String:", so.lowercase_string(sample_string))
+    print("Uppercase String:", so.uppercase_string(sample_string))
 
-def main2():
-    print(lambda_calculator.add(5,3))
-    print(lambda_calculator.subtract(10, 4))
-    print(lambda_calculator.multiply(6, 7))
-    print(lambda_calculator.divide(8, 2))
+main()
     
-main2()
